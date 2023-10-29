@@ -1,0 +1,31 @@
+{
+    "name": "@treckstar/alpine-node-zsh",
+    "private": true,
+    "version": "2.0.3",
+    "description": "Docker image with ZSH, NPM, PNPM, Yarn, and Starship.",
+    "main": "index.js",
+    "scripts": {
+        "build": "docker build --no-cache --tag treckstar/node18.17-zsh-alpine:latest .",
+        "push": "docker push treckstar/node18.17-zsh-alpine:latest",
+        "start": "docker run -it treckstar/node18.17-zsh-alpine:2.0.3",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/treckstar/alpine-node-zsh.git"
+    },
+    "keywords": [
+        "docker",
+        "alpine",
+        "node",
+        "zsh",
+        "pnpm",
+        "yarn"
+    ],
+    "author": "Brandon Trecki",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/treckstar/alpine-node-zsh/issues"
+    },
+    "homepage": "https://github.com/treckstar/alpine-node-zsh#readme"
+}
